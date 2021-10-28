@@ -2,7 +2,7 @@
     "name": "Sistema Bibliotecario CBTis147",
     "short_name": "SiBiTis147",
     "description": "Aplicación Web Progresiva sobre el catálogo  de libros del CBTis",
-    "theme_color": "#fa8296",
+    "theme_color": "#008296",
     "orientation": "portrait",
     "display": "standalone",
     "start_url": "./index.html?utm_source=web_app_manifest",
