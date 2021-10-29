@@ -4,6 +4,7 @@ const CACHE_NAME = "v1_pwa_sibitis147";
 //Archivos para la cache
 var urlsToCache = [
     './',
+    './img/Libro.png',
     './css/style.css',
     './img/favicon/favicon.png',
     './img/favicon/favicon-16x16.png',
