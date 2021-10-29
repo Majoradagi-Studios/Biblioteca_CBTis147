@@ -9,7 +9,8 @@ var urlsToCache = [
     './img/favicon/favicon-16x16.png',
     './img/favicon/favicon-32x32.png',
     './img/favicon/favicon-96x96.png',
-    './img/favicon/favicon-256x256.png'
+    './img/favicon/favicon-256x256.png',
+    './imagenesProvisionales/'
 ];
 
 /*--------------------------EVENTOS----------------------*/
