@@ -35,8 +35,8 @@
     <!-- Disable night mode for this page  -->
     <meta name="nightmode" content="enable/disable">
 
-    <!-- Fitscreen  -->
-    <meta name="viewport" content="uc-fitscreen=yes"/>
+    <!-- Fitscreen  --
+    <meta name="viewport" content="uc-fitscreen=yes"/>-->
 
     <!-- Layout mode -->
     <meta name="layoutmode" content="fitscreen/standard">
@@ -61,7 +61,7 @@
     <link rel="apple-touch-startup-image" href="splash_1536x2048.jpg" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="splash_1668x2224.jpg" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="splash_2048x2732.jpg" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-
+    
 
 
     <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png">
@@ -69,7 +69,6 @@
     <link rel="stylesheet" type="text/css" href="font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="manifest" href="manifest.json">
 
@@ -80,20 +79,14 @@
 
 </head>
 <body class="sb-nav-fixed">
+
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html"><img src="img/logoCBTis.png"></a>
+        <a class="navbar-brand ps-1 " href="index.html"><img src="img/logoCBTis.png"></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
         <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i> {{Usuario}}</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -104,6 +97,7 @@
             </li>
         </ul>
     </nav>
+
     <!-- Sidebar-->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
@@ -161,15 +155,55 @@
         <div id="layoutSidenav_content">
             <main>
                    
-                <div class="container-fluid px-5 mt-4">
-                     <!-- Aqui inicia el contenido -->                    
+                <div class="container-fluid px-5 mt-4 mb-4">
+                    <!-- Aqui inicia el contenido -->                    
                     <h1>Catálogo de libros</h1>
                     <small>Todos los libros existentes</small>
 
-                    <div class="row mt-5">
+                    <div class="row">
+                    <!-- 3 libros de ejemplo -->
+                        <div class="col mt-4">
+                            <div class="card" style="width: 17rem;">
+                                <img src="img/Libro.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Libro de ejemplo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card ml-5 mt-4" style="width: 17rem;">
+                                <img src="img/Libro.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Libro de ejemplo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col">
+                            <div class="card ml-5 mt-4" style="width: 17rem;">
+                                <img src="img/Libro.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Libro de ejemplo</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- 3 libros de ejemplo -->
-                        <div class="col-4">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col">
+                            <div class="card mt-4" style="width: 17rem;">
                                 <img src="img/Libro.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Libro de ejemplo</h5>
@@ -181,8 +215,8 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
-                            <div class="card ml-5" style="width: 18rem;">
+                        <div class="col">
+                            <div class="card ml-5 mt-4" style="width: 17rem;">
                                 <img src="img/Libro.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Libro de ejemplo</h5>
@@ -193,9 +227,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-4">
-                            <div class="card ml-5" style="width: 18rem;">
+                    
+                        <div class="col">
+                            <div class="card ml-5 mt-4" style="width: 17rem;">
                                 <img src="img/Libro.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Libro de ejemplo</h5>
@@ -206,56 +240,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="row mt-5">
-                        <!-- 3 libros de ejemplo -->
-                        <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="card ml-5" style="width: 18rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-4">
-                            <div class="card ml-5" style="width: 18rem;">
-                                <img src="img/Libro.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Libro de ejemplo</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a href="#" class="btn btn-warning"><strong>Detalles</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    
                     </div>
 
                 </div>
             </main>
             <!--Fin del contenido-->
 
-            <footer class="py-4 bg-footer mt-5">
+            <footer class="py-5 bg-footer mt-5">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-white">Copyright &copy; Your Website 2021</div>
@@ -267,6 +259,7 @@
                     </div>
                 </div>
             </footer>
+
         </div>
         
 
